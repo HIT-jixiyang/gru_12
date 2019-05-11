@@ -8,7 +8,7 @@ import config as c
 
 def config_log():
     logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                        format='%(asctime)s %(levelname)s \n %(message)s',
                         datefmt='%a, %d %b %Y %H:%M:%S',
                         filename=os.path.join(c.SAVE_PATH, "train.log"),
                         filemode='w')
